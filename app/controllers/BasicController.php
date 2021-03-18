@@ -23,7 +23,7 @@ class BasicController extends Controller
       $factory  = new ConfigFactory();
       $config = $factory->load($fileName);
 
-      //get json from API
+      //get data from API
       try {
           $prices = BitcoinValue::get($config->app->source);
       }

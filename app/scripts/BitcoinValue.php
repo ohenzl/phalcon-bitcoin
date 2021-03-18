@@ -15,7 +15,7 @@ class BitcoinValue
             $prices = json_decode(file_get_contents($source));
             if (isset($prices->bpi->EUR->rate) AND isset($prices->bpi->USD->rate)) {
                 return $prices;
-            } else { //page exists, but wrong info
+            } else { //page exists, wrong info
                 throw new Exception("Požadované informace nebyly nalezeny!");
             }
         } else { //page does not exist
