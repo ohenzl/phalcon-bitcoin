@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+}
+
+.currency {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+  grid-column-gap: 50px;
+  font-size: 40px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta http-equiv="refresh" content="<?php echo $reload_time; ?>">
+        <title>Bitcoin exchange rate</title>
+         <?php $this->assets->outputCss() ?>
+    </head>
+    <body>
+      <div class='error'>
+        <?php echo $error_msg; ?>
+      </div>
+        <div class="container">
+
+            <div class='currency'>
+                USD
+            </div>
+            <div class='currency'>
+                EUR
+            </div>
+            <div>
+                <?php echo $prices->USD->rate; ?>
+            </div>
+            <div>
+                <?php echo $prices->EUR->rate; ?>
+            </div>
+        </div>
+
+    </body>
+</html>
