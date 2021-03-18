@@ -13,7 +13,7 @@ class BasicController extends Controller
 
 
       $this->view->error_msg = '';
-      $this->view->reload_time = $config->app->reload_time;
+
 
       //load css
       $this->assets->addCss('/css/exchange.css');
@@ -34,6 +34,7 @@ class BasicController extends Controller
       }
 
       $this->view->prices = $prices->bpi;
+      $this->view->reload_time = $config->app->reload_time;
 
     }
 
